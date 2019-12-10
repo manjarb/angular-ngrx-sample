@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path: "products",
     loadChildren: "../products/products.module#ProductsModule"
+  },
+  {
+    path: "testing",
+    loadChildren: "../testing/testing.module#TestingModule"
   }
 ];
 

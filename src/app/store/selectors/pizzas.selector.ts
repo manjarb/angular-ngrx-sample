@@ -39,11 +39,11 @@ export const getAllPizzas = createSelector(getPizzasEntities, entities => {
   return Object.keys(entities).map(id => entities[parseInt(id, 10)]);
 });
 
-export const getPizzaLoaded = createSelector(
+export const getPizzasLoaded = createSelector(
   getPizzaState,
   fromPizzas.getPizzasLoaded
 );
-export const getPizzaLoading = createSelector(
+export const getPizzasLoading = createSelector(
   getPizzaState,
   fromPizzas.getPizzasLoading
 );

@@ -1,6 +1,8 @@
 import * as fromRouter from "@ngrx/router-store";
 
 import * as fromPizzas from "./pizzas.reducer";
+import * as fromTopping from "./toppings.reducer";
+
 import { ActionReducerMap, createFeatureSelector } from "@ngrx/store";
 import {
   Params,
@@ -10,11 +12,13 @@ import {
 
 export interface ProductsState {
   pizzas: fromPizzas.PizzaState;
+  toppings: fromTopping.ToppingsState;
 }
 
 // Pizza store
 export const pizzaReducers: ActionReducerMap<ProductsState> = {
-  pizzas: fromPizzas.reducer
+  pizzas: fromPizzas.reducer,
+  toppings: fromTopping.reducer
 };
 
 export const getProductsState = createFeatureSelector<ProductsState>(

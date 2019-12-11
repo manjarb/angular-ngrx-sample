@@ -5,7 +5,6 @@ import { Store } from "@ngrx/store";
 import * as fromStore from "../../../app/store";
 
 import { Pizza } from "../../models/pizza.model";
-import { PizzasService } from "../../services/pizzas.service";
 import { Observable } from "rxjs";
 
 @Component({

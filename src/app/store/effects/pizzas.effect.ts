@@ -6,7 +6,7 @@ import * as pizzaActions from "../actions/pizzas.action";
 import * as fromServices from "../../../products/services";
 
 import { switchMap, map, catchError } from "rxjs/operators";
-import { of, from } from "rxjs";
+import { of } from "rxjs";
 
 @Injectable()
 export class PizzasEffects {
@@ -16,7 +16,7 @@ export class PizzasEffects {
   ) {}
 
   @Effect()
-  loadPizza$ = this.actions$.pipe(
+  loadPizzas$ = this.actions$.pipe(
     ofType(pizzaActions.LOAD_PIZZAS),
     switchMap(() => {
       return this.pizzasService.getPizzas().pipe(

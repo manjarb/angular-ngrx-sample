@@ -35,7 +35,6 @@ export class ProductItemComponent implements OnInit {
   constructor(private store: Store<fromStore.ProductsState>) {}
 
   ngOnInit() {
-    this.store.dispatch(new fromStore.LoadToppings());
     this.pizza$ = this.store.select(fromStore.getSelectedPizza).pipe(
       tap((pizza: Pizza = null) => {
         const pizzaExists = !!(pizza && pizza.toppings);

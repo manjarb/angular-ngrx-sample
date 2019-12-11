@@ -62,20 +62,16 @@
           "name": "pepper"
         },
         {
-          "id": 3,
-          "name": "basil"
-        },
-        {
           "id": 4,
           "name": "chili"
         },
         {
-          "id": 7,
-          "name": "olive"
-        },
-        {
           "id": 2,
           "name": "bacon"
+        },
+        {
+          "id": 12,
+          "name": "tomato"
         }
       ],
       "id": 1

@@ -2,8 +2,8 @@ import { Topping } from "../../../products/models/topping.model";
 import { Action } from "@ngrx/store";
 
 export const LOAD_TOPPINGS = "[Products] Load Toppings";
-export const LOAD_TOPPINGS_FAIL = "[Products] Load Toppings";
-export const LOAD_TOPPINGS_SUCCESS = "[Products] Load Toppings";
+export const LOAD_TOPPINGS_FAIL = "[Products] Load Toppings Fail";
+export const LOAD_TOPPINGS_SUCCESS = "[Products] Load Toppings Success";
 export const VISUALISE_TOPPINGS = "[Products] Visualise Toppings";
 
 export class LoadToppings implements Action {
